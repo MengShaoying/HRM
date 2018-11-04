@@ -1,0 +1,21 @@
+---
+display_name: 员工
+description: 员工
+structs:
+  name:
+    type: varchar(45)
+    display_name: 姓名
+    description: 姓名
+    allow_null: false
+  sex:
+    type: varchar(45)
+    format:
+      male: 男
+      female: 女
+    format_description: 请选择性别
+    display_name: 性别
+    description: 性别
+    allow_null: false
+relationships: []
+snaps: []
+...

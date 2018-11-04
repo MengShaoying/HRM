@@ -50,6 +50,8 @@ if_not_found(function () {
 // init controller
 include CONTROLLER_DIR.'/index.php';
 include CONTROLLER_DIR.'/account.php';
+include CONTROLLER_DIR.'/project.php';
+include CONTROLLER_DIR.'/staff.php';
 
 // fix
 not_found();

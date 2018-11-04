@@ -1,0 +1,22 @@
+---
+display_name: 项目
+description: 项目
+structs:
+  name:
+    type: varchar(45)
+    display_name: 项目名
+    description: 项目名
+    allow_null: false
+  jira_project_key:
+    type: varchar(45)
+    display_name: JIRA标识
+    description: 项目在JIRA中的标识符
+    allow_null: false
+  description:
+    type: varchar(200)
+    display_name: 描述
+    description: 项目的大概介绍
+    allow_null: false
+relationships: []
+snaps: []
+...
