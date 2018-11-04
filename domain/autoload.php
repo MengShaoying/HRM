@@ -3,8 +3,8 @@
 spl_autoload_register(function ($class_name) {
 
     $class_maps = array(
-        'order_dao' => 'dao/order.php',
-        'order' => 'entity/order.php',
+        'account_dao' => 'dao/account.php',
+        'account' => 'entity/account.php',
     );
 
     if (isset($class_maps[$class_name])) {

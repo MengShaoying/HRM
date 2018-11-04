@@ -1,0 +1,35 @@
+---
+display_name: 账户
+description: 登陆系统所使用的账户
+structs:
+  email:
+    type: varchar(45)
+    format: /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+    format_description: 请输入有效的电子邮箱地址
+    display_name: 电子邮箱
+    description: 登陆所使用的账号
+    allow_null: false
+  password:
+    type: varchar(45)
+    display_name: 密码
+    description: 登陆所使用的密码
+    allow_null: false
+  last_login_ip:
+    type: varchar(45)
+    format: /^(?:(?:2[0-4][0-9]\.)|(?:25[0-5]\.)|(?:1[0-9][0-9]\.)|(?:[1-9][0-9]\.)|(?:[0-9]\.)){3}(?:(?:2[0-5][0-5])|(?:25[0-5])|(?:1[0-9][0-9])|(?:[1-9][0-9])|(?:[0-9]))$/
+    format_description: 请输入有效的IP地址
+    display_name: 最后登陆IP
+    description: 该账户最后一次登陆的IP地址
+    allow_null: false
+  status:
+    type: varchar(10)
+    format:
+        valid: 有效
+        invalid: 无效
+    format_description: 请选择范围内的状态
+    display_name: 状态
+    description: 账户的状态
+    allow_null: false
+relationships: []
+snaps: []
+...
