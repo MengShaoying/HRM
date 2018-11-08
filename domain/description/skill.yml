@@ -1,0 +1,12 @@
+---
+display_name: 技能
+description: 人员技能素质
+structs:
+  name:
+    type: varchar(45)
+    display_name: 名字
+    description: 技能名字
+    allow_null: false
+relationships: []
+snaps: []
+...

@@ -52,6 +52,8 @@ include CONTROLLER_DIR.'/index.php';
 include CONTROLLER_DIR.'/account.php';
 include CONTROLLER_DIR.'/project.php';
 include CONTROLLER_DIR.'/staff.php';
+include CONTROLLER_DIR.'/skill.php';
+include CONTROLLER_DIR.'/skill_category.php';
 
 // fix
 not_found();
